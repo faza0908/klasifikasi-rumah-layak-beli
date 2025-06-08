@@ -1,0 +1,15 @@
+# Jalankan Streamlit di background untuk menghasilkan model file .pkl
+!streamlit run streamlit_app.py &>/dev/null&
+
+# Beri waktu agar proses training (jika diperlukan) selesai dan model tersimpan
+import time
+time.sleep(10) # Tambahkan waktu tunggu lebih lama jika dataset besar atau training butuh waktu
+
+print("\nMengecek keberadaan file model...")
+if os.path.exists('best_rf_model.pkl'):
+    print("'best_rf_model.pkl' ditemukan.")
+else:
+    print("'best_rf_model.pkl' tidak ditemukan. Pastikan proses training berhasil.")
+
+# Kemudian, Anda bisa mengekspos menggunakan localtunnel jika ingin melihat aplikasinya
+# !npx localtunnel --port 8501
