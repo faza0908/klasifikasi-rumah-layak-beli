@@ -1,5 +1,5 @@
-streamlit
-        scikit-learn
-        joblib
-        pandas
-        numpy
+!pip install streamlit scikit-learn joblib pandas
+!npm install -g localtunnel # Jika Anda berencana menggunakan localtunnel
+!pip freeze > requirements.txt
+
+print("\nFile 'requirements.txt' telah dibuat.")
