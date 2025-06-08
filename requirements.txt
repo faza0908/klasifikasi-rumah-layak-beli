@@ -1,5 +1,5 @@
 streamlit
-        scikit-learn
-        joblib
-        pandas
-        numpy
+            scikit-learn==1.6.1 # Ganti dengan versi yang Anda temukan
+            joblib==1.5.1     # Ganti dengan versi yang Anda temukan
+            pandas==2.2.2      # Ganti dengan versi yang Anda temukan
+            numpy==1.26.4       # Ganti dengan versi yang Anda temukan
